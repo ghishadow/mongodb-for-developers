@@ -28,3 +28,11 @@ now lxd has been setup, we can create our lxc container by running
 $ lxc launch ubuntu:16.04 <containername> 
 
 #+END_SRC
+
+now to run command inside lxc container you can use lxc exec
+
+#+BEGIN_SRC shell
+$ lxc exec <containername> /bin/bash
+
+#+END_SRC
+to enter bash shell in container
