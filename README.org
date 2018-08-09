@@ -1,3 +1,5 @@
+![build status](https://travis-ci.com/ghishadow/mongodb-for-developers.svg?branch=master)
+
 * MongoDB for Developers
 Mongodb is document based NoSQL database. it uses JSON to store data in own format known as BSON(Binary JSON) which has more data type like date. 
 Mongodb allows application developers design data models that makes sense for their Applications
