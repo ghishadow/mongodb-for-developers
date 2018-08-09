@@ -1,2 +1,30 @@
 * MongoDB for Developers
+Mongodb is document based NoSQL database. it uses JSON to data in own format known as BSON
+Mongodb allows application developers design data models that makes sense for their Applications
 
+mongo-shell <----> mongod <----> http server ( python, pymongo, ) <----> User (Router, Laptop)
+
+
+
+We will do our practical in [[https://linuxcontainers.org/lxd][lxd]] container, to install it in Ubuntu
+run
+#+BEGIN_SRC shell
+$ snap install lxd
+#+END_SRC
+then add your user to lxd group, so you don't need to run as sudo
+#+BEGIN_SRC shell
+$ sudo usermod -a -G lxd <yourusername>
+#+END_SRC
+Before you can create containers, you need to tell LXD a little bit about your storage and network needs.
+so run the following command to setup that
+
+#+BEGIN_SRC shell
+$ sudo lxd init
+#+END_SRC
+
+now lxd has been setup, we can create our lxc container by running
+
+#+BEGIN_SRC shell
+$ lxc launch ubuntu:16.04 <containername> 
+
+#+END_SRC
